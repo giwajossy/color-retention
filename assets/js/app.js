@@ -10,10 +10,8 @@ function rgb2hex(rgb){
 
 
 function colorChange() {
-    var valueOfInput = parseInt(prompt("Set interval [in seconds]"));   
     
-    
-    var process = setInterval(randomizeBgColor, valueOfInput+"000");
+    var process = setInterval(randomizeBgColor, 3000);
     
     function randomizeBgColor(e) { 
         let red = Math.floor(Math.random() * 255);
